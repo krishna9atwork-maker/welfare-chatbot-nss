@@ -1,25 +1,3 @@
-# ============================================================
-#  app.py  —  Main Welfare Scheme Chatbot
-#  NSS IIT Roorkee Open Projects 2026  |  Track 1 Challenge 1
-#
-#  Tech Stack:
-#    • Flask          — lightweight Python web server
-#    • Twilio         — WhatsApp messaging channel
-#    • Google Gemini  — LLM for Q&A (RAG pattern, no hallucination)
-#    • Bhashini       — IndicTrans2 for Hindi↔English translation
-#    • Render         — free cloud deployment (see render.yaml)
-#
-#  Conversation Flow (5 questions → results → Q&A):
-#    Step 0 → Welcome (bilingual)
-#    Step 1 → Language choice
-#    Step 2 → Occupation  (farmer / labor / gig / unemployed)
-#    Step 3 → Annual income
-#    Step 4 → Gender
-#    Step 5 → Owns agricultural land?
-#    Step 6 → Has pucca house?  → show results
-#    Step 7 → Free Q&A about matched schemes
-# ============================================================
-
 import os
 from flask import Flask, request
 from twilio.twiml.messaging_response import MessagingResponse

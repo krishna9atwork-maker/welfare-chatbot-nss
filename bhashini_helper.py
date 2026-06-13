@@ -1,8 +1,4 @@
-# ============================================================
-#  bhashini_helper.py  —  Bhashini / IndicTrans2 Integration
-#  Official India AI translation (recommended tool in challenge)
-#  Fallback to simple dictionary if API unavailable
-# ============================================================
+
 
 import requests
 import os
